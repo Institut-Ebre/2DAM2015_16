@@ -1,0 +1,3 @@
+<? php
+
+eccho "Hello World./n";
