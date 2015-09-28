@@ -54,7 +54,7 @@ require "helloword_web_bootstrap.php"
       <div class="starter-template">
         <h1>
 			<?php 
-				$hello->greetings();
+				$hello->greetings_random();
 			?>
          </h1>
       </div>
