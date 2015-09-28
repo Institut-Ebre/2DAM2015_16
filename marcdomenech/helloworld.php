@@ -1,3 +1,3 @@
 #!/usr/bin/php
-<? php
+<?php
 echo "Hello World \n";
