@@ -57,7 +57,7 @@
     <div class="container">
 
       <div class="starter-template">
-        <h1><?php echo $hello->greetings($name);?></h1>
+        <h1><?php echo $hello->greetings_random();?></h1>
         <p class="lead"><br></p>
       </div>
 
