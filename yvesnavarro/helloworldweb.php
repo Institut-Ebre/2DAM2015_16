@@ -1,9 +1,14 @@
 <?php
+
 require "vendor/fzaninotto/faker/src/autoload.php";
+
 $faker = Faker\Factory::create();
-$name = $faker->name;
-//echo "hello $name \n";
+
+$name = $faker->paragraph($nbSentences = 4);
+//echo "Hello $name"."\n";
+
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -13,25 +18,18 @@ $name = $faker->name;
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="http://getbootstrap.com/favicon.ico">
+    <link rel="icon" href="../../favicon.ico">
 
     <title>Starter Template for Bootstrap</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-    <!-- Custom styles for this template -->
-    <link href="http://getbootstrap.com/examples/starter-template/starter-template.css" rel="stylesheet">
+<!-- Optional theme -->
+<link rel="stylesheet" href="http://getbootstrap.com/examples/starter-template/starter-template.css">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="http://getbootstrap.com/assets/js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
   </head>
 
   <body>
@@ -45,7 +43,7 @@ $name = $faker->name;
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Hello World</a>
+          <a class="navbar-brand" href="#">Project name</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -60,9 +58,11 @@ $name = $faker->name;
     <div class="container">
 
       <div class="starter-template">
-        <h1><?php echo "hello $name \n";?></h1>
+        <h1>Bootstrap starter template</h1>
+        <p class="lead">Hello <?php  echo $name;?>.</p>
       </div>
 
     </div><!-- /.container -->
+
   </body>
 </html>
