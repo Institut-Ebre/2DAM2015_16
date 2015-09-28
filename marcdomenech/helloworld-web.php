@@ -55,7 +55,7 @@ require "helloworld_botstrap.php";
     <div class="container">
 
       <div class="starter-template">
-        <h1><?php $hello->greetings();?></h1>
+        <h1><?php $hello->greetings_random();?></h1>
       </div>
 
     </div><!-- /.container -->
