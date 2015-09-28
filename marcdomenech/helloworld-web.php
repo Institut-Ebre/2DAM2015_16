@@ -1,13 +1,11 @@
 <?php
-
 require "vendor/fzaninotto/faker/src/autoload.php";
+$faker = Faker\Factory::create(); 
+$name = $faker->name;
 
-$faker = Faker\Factory::create();
-
-$name = $faker ->name;
-
-//echo "Hello $name\n";
 ?>
+
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -19,19 +17,18 @@ $name = $faker ->name;
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hello Word!</title>
 
+    <title>Hello World</title>
 	<!-- Latest compiled and minified CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	
-	<!-- Custom styles for this template -->
-    <link href="http://getbootstrap.com/examples/starter-template/starter-template.css" rel="stylesheet">
 
+	<link rel="stylesheet" href="http://getbootstrap.com/examples/starter-template/starter-template.css">
 	<!-- Optional theme -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
 
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+   
   </head>
 
   <body>
@@ -45,7 +42,7 @@ $name = $faker ->name;
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Hello Word!</a>
+          <a class="navbar-brand" href="#">Project name</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -60,10 +57,14 @@ $name = $faker ->name;
     <div class="container">
 
       <div class="starter-template">
-        <h1>Hello<?php echo "$name\n";?></h1>
+        <h1><?php echo "Hello $name \n";?></h1>
       </div>
 
     </div><!-- /.container -->
-    
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
   </body>
 </html>
