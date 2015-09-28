@@ -49,7 +49,12 @@ require "helloWorld_bootstrap.php";
     <div class="container">
 
       <div class="starter-template">
-        <h1><?php $hello->greettings($name); ?></h1>
+        <h1>
+			<?php
+				$hello->name = "Manolo";
+				$hello->greettings(); 
+			?>
+		</h1>
       </div>
 
     </div><!-- /.container -->
