@@ -4,11 +4,13 @@ require "vendor/fzaninotto/faker/src/autoload.php";
 
 class Hello
 {
-    public $name = "Albert";
+    public $name  = "Liviu";
 
-    public function __construct($faker){
+    public $faker;
 
-        $this->faker = Faker\Factory::create();
+    public function __construct() {
+
+        $this-> faker = Faker\Factory::create();
 
     }
 
@@ -21,8 +23,9 @@ class Hello
         }
     }
 
-    public function greetings_random($name = null)
+
+    public function greetings_random()
     {
-        echo "Hola ". $this->faker->name;
+        echo "Hola " . $this-> faker -> name;
     }
 }
