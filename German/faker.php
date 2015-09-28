@@ -1,10 +1,10 @@
 <?php
 
-require "vendor/fzaninotto/faker/src/autoload.php";
+require "helloworld-web-boot.php";
 
-$fake = Faker\Factory::create();
+//$fake = Faker\Factory::create();
 
-$name = $fake->name;
+//$name = $fake->name;
 
 //echo "hello $name\n"; 
 
@@ -29,7 +29,11 @@ $name = $fake->name;
 
   </head>
   <body>
-    <h1>Hello, <?php echo "hello $name\n"; ?>!</h1>
+    <h1>Hello, <?php 
+					$hello->name = 'Manolo'
+					$hello->greetings($name)
+				?>
+	</h1>
 
   </body>
 </html>
