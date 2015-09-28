@@ -1,10 +1,8 @@
 <?php
 
-require "vendor/fzaninotto/faker/src/autoload.php";
 require "hello.class.php";
+require "vendor/fzaninotto/faker/src/autoload.php";
 
 $hello = new Hello();
-
-$fake = Faker\Factory::create();
-
-$name = $fake->name;
+$faker = Faker\Factory::create();
+$hello->faker = $faker;
