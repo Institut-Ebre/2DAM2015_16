@@ -2,8 +2,8 @@
 
 require "vendor/fzaninotto/faker/src/autoload.php";
 
-$faker=Faker\Factory::create();
+$faker = Faker\Factory::create();
 
-$name=$faker->name;
+$name = $faker ->name;
 
 echo "Hello $name\n";
