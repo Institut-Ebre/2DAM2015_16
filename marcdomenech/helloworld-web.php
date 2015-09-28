@@ -1,7 +1,5 @@
 <?php
-require "vendor/fzaninotto/faker/src/autoload.php";
-$faker = Faker\Factory::create(); 
-$name = $faker->name;
+require "helloworld_botstrap.php";
 
 ?>
 
@@ -57,7 +55,7 @@ $name = $faker->name;
     <div class="container">
 
       <div class="starter-template">
-        <h1><?php echo "Hello $name \n";?></h1>
+        <h1><?php $hello->greetings_random();?></h1>
       </div>
 
     </div><!-- /.container -->
