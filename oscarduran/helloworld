@@ -1,5 +1,6 @@
+#!/usr/bin/php
 <?php
 
-echo "Hello Wolrd!!!!\n";
+echo "Hello World!!!!\n";
 
 
