@@ -1,3 +1,4 @@
+
 <?php
 require "vendor/fzaninotto/faker/src/autoload.php";
 $faker = Faker\Factory::create();
