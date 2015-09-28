@@ -7,4 +7,4 @@ $hello = new Hello();
 $faker = Faker\Factory::create();
 $name = $faker->name;
 
-$hello->$name = $name;
+$hello->name = $name;
