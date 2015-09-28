@@ -1,4 +1,4 @@
-#!/usr/bin/php
 <? php
 
-eccho "Hello World./n";
+echo "Hello World./n";
+?>
