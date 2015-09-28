@@ -61,8 +61,8 @@ require "helloworld_boodstrap.php";
 		  
 		<h1>
 		<?php  
-			$hello->name ="Manolo";
-			$hello->greetings($name);
+			//$hello->name ="Manolo";
+			$hello->greetings_random();
 		?>
 		</h1>
        

@@ -1,6 +1,8 @@
 <?php
-require "vendor/fzaninotto/faker/src/autoload.php";
-require "hello.class.php";
-$hello = new Hello($name);
-$faker = Faker\Factory::create();
-$hello->name = $facker->name;
+
+	require "hello.class.php";
+	require "vendor/fzaninotto/faker/src/autoload.php";
+	
+	$faker = Faker\Factory::create();
+	$hello = new Hello($faker);
+//Al definir les variables ho fem amb ($) davant, al utilitzarles, cal recordar de no possar el $.
