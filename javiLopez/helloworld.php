@@ -1,2 +1,4 @@
-#:/usr/bin/php
-echo "Hello World";
+#!/usr/bin/php
+<?php
+
+echo "Hello World\n";
