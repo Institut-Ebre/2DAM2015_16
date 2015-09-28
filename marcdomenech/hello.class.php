@@ -7,7 +7,7 @@ class Hello
 	public $faker;
 
 	public function __construct(){
-		$this->faker = Faker\Factory::create();
+		$this->faker = Faker\Factory::create()->name;
 	}
 
 	public $name = "Pepe";
@@ -21,9 +21,7 @@ class Hello
     		echo "Hola $this->name";
     	}
     }
-
     public function greetings_random() {
-    	echo "Hola " . $this->faker->name;
+    	echo "Hola $this->faker";
     }
-
 }
