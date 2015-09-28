@@ -1,8 +1,4 @@
-<?php
-
-require "helloworld_bootstrap.php";
-
-?>
+<?php require "helloworld_bootstrap.php"; ?>
 
 
 <!DOCTYPE html>
@@ -61,8 +57,8 @@ require "helloworld_bootstrap.php";
     <div class="container">
 
       <div class="starter-template">
-        <h1><?php echo "Hello $name\n";?></h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+        <h1><?php echo $hello->greetings($name);?></h1>
+        <p class="lead"><br></p>
       </div>
 
     </div><!-- /.container -->
