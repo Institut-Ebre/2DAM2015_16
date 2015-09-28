@@ -1,10 +1,12 @@
-
 <?php
 require "vendor/fzaninotto/faker/src/autoload.php";
 $faker = Faker\Factory::create();
-$name = $faker->name;
-// echo "Hello $name\n";
+
+$name = $faker->phoneNumber;
+
+//echo "Hello $name!!!!\n";
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -14,18 +16,14 @@ $name = $faker->name;
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="../../favicon.ico">
 
-    <title>Hello World by: Javi López</title>
+    <title>Starter Template for Bootstrap</title>
 
-    <!-- Latest compiled and minified CSS -->
+   <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-<!-- Custom styles for this template -->
-    <link href="http://getbootstrap.com/examples/starter-template/starter-template.css" rel="stylesheet">
-
 <!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="http://getbootstrap.com/examples/starter-template/starter-template.css">
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -57,14 +55,14 @@ $name = $faker->name;
     <div class="container">
 
       <div class="starter-template">
-        <h1><?php echo "Hello $name\n";?></h1>
-        <p class="lead">Hello World.<br> All you get is this text and a mostly barebones HTML document.</p>
+        <h1>Bootstrap starter template: <?php echo "$name";?></h1>
+       
       </div>
 
     </div><!-- /.container -->
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
   </body>
 </html>
+
+
+
