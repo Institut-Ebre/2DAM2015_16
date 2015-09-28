@@ -1,12 +1,10 @@
 <?php
 
-require "vendor/fzaninotto/faker/src/autoload.php";
+require "helloworld_boodstrap.php";
 
-$faker = Faker\Factory::create();
 
-$name=$faker->email;
 
-//echo "Hello $name\n";
+
 ?>
 
 <!DOCTYPE html>
@@ -60,7 +58,13 @@ $name=$faker->email;
     <div class="container">
 
       <div class="starter-template">
-        <h1>Hello <?php echo "$name\n";?></h1>
+		  
+		<h1>
+		<?php  
+			$hello->name ="Manolo";
+			$hello->greetings($name);
+		?>
+		</h1>
        
       </div>
 
