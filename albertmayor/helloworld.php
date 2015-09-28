@@ -57,8 +57,8 @@ require "helloworld_bootstrap.php";
 
     <div class="starter-template">
         <h1>
-            <?php 
-                $hello->greetings();
+            <?php
+                $hello->greetings_random();
             ?>
         </h1>
     </div>
