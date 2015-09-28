@@ -1,9 +1,7 @@
 
 <?php
-require "vendor/fzaninotto/faker/src/autoload.php";
-$faker = Faker\Factory::create();
-$name = $faker->name;
-// echo "Hello $name\n";
+require "helloworld_bootstrap.php";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -16,7 +14,7 @@ $name = $faker->name;
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
 
-    <title>Hello World by: Javi López</title>
+    <title>Hello World JaviL</title>
 
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
@@ -57,8 +55,9 @@ $name = $faker->name;
     <div class="container">
 
       <div class="starter-template">
-        <h1><?php echo "Hello $name\n";?></h1>
-        <p class="lead">Hello World.<br> All you get is this text and a mostly barebones HTML document.</p>
+        <h1><?php $hello->greetings();
+			?></h1>
+        <p class="lead">Hello World.<br> 1st php web by Javi L&oacute;pez.</p>
       </div>
 
     </div><!-- /.container -->
