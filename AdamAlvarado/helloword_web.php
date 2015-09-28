@@ -60,7 +60,7 @@ $name = $faker ->name;
     <div class="container">
 
       <div class="starter-template">
-        <h1>Hello<?php echo "$name\n";?></h1>
+        <h1>Hello <?php echo "$name\n";?></h1>
       </div>
 
     </div><!-- /.container -->
