@@ -30,8 +30,7 @@ require "helloworld-web-boot.php";
   </head>
   <body>
     <h1>Hello, <?php 
-					$hello->name = 'Manolo'
-					$hello->greetings($name)
+					$hello->greetings_random($name);
 				?>
 	</h1>
 
