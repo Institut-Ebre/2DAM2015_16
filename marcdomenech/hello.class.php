@@ -12,7 +12,7 @@ class Hello
 
 	public $name = "Pepe";
 
-    public function greetings() {
+    public function greetings($name) {
     	//si el nom mel donen funcionarà amb el nom aleatori
     	if($name != null){
         	echo "Hola $name";
