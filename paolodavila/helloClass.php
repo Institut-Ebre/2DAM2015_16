@@ -1,9 +1,20 @@
 <?php 
 
+
+
 //Creació d'un objecte
 class Hello
 {
 	public $name = "Pepe";
+	
+	public $faker;
+	
+	public function __construct($faker){
+		
+		$this->faker = $faker;
+		
+	}
+	
 	
     // Declaració d'un mètode
     public function greettings($name = null) {
@@ -12,5 +23,9 @@ class Hello
 		} else {
 			echo "Hello, $this->name";
 		}
+    }
+    
+     public function greettings_random() {
+		 echo "Hello, " . $this->faker->name;
     }
 }

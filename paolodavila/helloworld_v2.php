@@ -51,8 +51,7 @@ require "helloWorld_bootstrap.php";
       <div class="starter-template">
         <h1>
 			<?php
-				$hello->name = "Manolo";
-				$hello->greettings(); 
+				$hello->greettings_random(); 
 			?>
 		</h1>
       </div>
