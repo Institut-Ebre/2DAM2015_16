@@ -1,12 +1,14 @@
 <?php
 
-require "helloWorld_bootstrap.php";
+require "helloworld_boodstrap.php";
+
+
+
 
 ?>
 
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,13 +16,20 @@ require "helloWorld_bootstrap.php";
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hello World!</title>
+    <title>Starter Template for Bootstrap</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-    <!-- Custom styles for this template -->
-    <link href="http://getbootstrap.com/examples/starter-template/starter-template.css" rel="stylesheet">
+<link rel="stylesheet" href="http://getbootstrap.com/examples/starter-template/starter-template.css">
+
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+
   </head>
 
   <body>
@@ -34,7 +43,7 @@ require "helloWorld_bootstrap.php";
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Hello world!</a>
+          <a class="navbar-brand" href="#">Project name</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -49,20 +58,21 @@ require "helloWorld_bootstrap.php";
     <div class="container">
 
       <div class="starter-template">
-        <h1>
-			<?php
-				$hello->greettings_random(); 
-			?>
+		  
+		<h1>
+		<?php  
+			$hello->name ="Manolo";
+			$hello->greetings($name);
+		?>
 		</h1>
+       
       </div>
 
     </div><!-- /.container -->
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-  </body>
-</html>
+   
+  
+
+</body>
+
