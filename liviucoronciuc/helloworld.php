@@ -59,7 +59,7 @@ require "helloworld_bootstrap.php";
         <h1>
             <?php
             //$hello->greetings();
-            
+
             $hello->greetings_random();
             ?>
         </h1>
