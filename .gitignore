@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 /vendor
 /composer.json
 /composer.lock
+=======
+vendor/
+>>>>>>> 8779d776681095cf74eeab5bb220996a04be72f6
