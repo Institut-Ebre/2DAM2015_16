@@ -1,11 +1,6 @@
 <?php
 
-require "vendor/fzaninotto/faker/src/autoload.php";
-
-$faker = Faker\Factory::create();
-
-$name = $faker->paragraph($nbSentences = 4);
-//echo "Hello $name"."\n";
+require "helloworld_bootstrap.php";
 
 ?>
 
@@ -59,7 +54,11 @@ $name = $faker->paragraph($nbSentences = 4);
 
       <div class="starter-template">
         <h1>Bootstrap starter template</h1>
-        <p class="lead">Hello <?php  echo $name;?>.</p>
+        <p class="lead">Hello 
+        <?php
+			echo $hello->greetings_random();
+		?>
+		</p>
       </div>
 
     </div><!-- /.container -->
