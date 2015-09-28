@@ -1,14 +1,6 @@
 <?php
-
-require "vendor/fzaninotto/faker/src/autoload.php";
-
-$faker = Faker\Factory::create();
-
-$name = $faker ->name;
-
-//echo "Hello $name\n";
+require "helloword_web_bootstrap.php"
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -60,7 +52,11 @@ $name = $faker ->name;
     <div class="container">
 
       <div class="starter-template">
-        <h1>Hello<?php echo "$name\n";?></h1>
+        <h1>
+			<?php 
+				$hello->greetings();
+			?>
+         </h1>
       </div>
 
     </div><!-- /.container -->
