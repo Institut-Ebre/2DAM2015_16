@@ -1,12 +1,7 @@
 <?php
 
-require "vendor/fzaninotto/faker/src/autoload.php";
+require "helloworld_bootstrap.php";
 
-$faker = Faker\Factory::create();
-
-$name = $faker->name;
-
-//echo "Hello $name\n";
 ?>
 
 
