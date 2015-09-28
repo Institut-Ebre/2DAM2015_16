@@ -1,13 +1,10 @@
 <?php
-
 require "vendor/fzaninotto/faker/src/autoload.php";
-
 $faker = Faker\Factory::create();
 
-$name = $faker->name;
+$name = $faker->phoneNumber;
 
-//echo "Hello, $name!";
-
+//echo "Hello $name!!!!\n";
 ?>
 
 <!DOCTYPE html>
@@ -20,13 +17,16 @@ $name = $faker->name;
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Hello World!</title>
+    <title>Starter Template for Bootstrap</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-    <!-- Custom styles for this template -->
-    <link href="http://getbootstrap.com/examples/starter-template/starter-template.css" rel="stylesheet">
+<!-- Optional theme -->
+<link rel="stylesheet" href="http://getbootstrap.com/examples/starter-template/starter-template.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </head>
 
   <body>
@@ -40,7 +40,7 @@ $name = $faker->name;
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Hello world!</a>
+          <a class="navbar-brand" href="#">Project name</a>
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
@@ -55,16 +55,14 @@ $name = $faker->name;
     <div class="container">
 
       <div class="starter-template">
-        <h1>Hello, <?php echo $name; ?></h1>
+        <h1>Bootstrap starter template: <?php echo "$name";?></h1>
+       
       </div>
 
     </div><!-- /.container -->
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
 </html>
+
+
+
