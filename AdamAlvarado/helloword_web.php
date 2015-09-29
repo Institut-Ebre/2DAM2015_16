@@ -1,5 +1,6 @@
 <?php
-require "helloword_web_bootstrap.php"
+require "helloword_web_bootstrap.php";
+require "Persona.php";
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -53,10 +54,17 @@ require "helloword_web_bootstrap.php"
 
       <div class="starter-template">
         <h1>
-			<?php 
+			<?php
+
 				$hello->greetings_random();
 			?>
          </h1>
+        <?php
+          $persona = new \Persona("adam","alvarado","bertomeu");
+          echo $persona->name;
+          echo "<br/>";
+          echo $persona->full_name();
+        ?>
       </div>
 
     </div><!-- /.container -->
