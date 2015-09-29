@@ -1,8 +1,7 @@
 <?php
 
 require "helloworld_boodstrap.php";
-
-
+require "Persona.php";
 
 
 ?>
@@ -63,7 +62,14 @@ require "helloworld_boodstrap.php";
 		<?php  
 			//$hello->name ="Manolo";
 			$hello->greetings_random();
-		?>
+            $persona = new Factoria("nomPrimer", "nomSegon", "nomTercer");
+
+            echo "name:".$persona->name;
+        echo"<br/>";
+        echo $persona->full_name();
+
+
+        ?>
 		</h1>
        
       </div>

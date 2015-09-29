@@ -4,11 +4,12 @@ require "vendor/fzaninotto/faker/src/autoload.php";
 class Hello
 {
 	public $name="Pepe";
+	public $prova;
 	
 	public $faker;
 	public function __construct($faker){
 		$this->faker = $faker;
-		}
+	}
 	
 	public function greetings($name = null){
 		//Si li passem algun nom, el saluda si no li passem cap paràmetre saluda a Pepe
@@ -22,5 +23,5 @@ class Hello
 	public function greetings_random(){
 			echo "Hola" . $this->faker->name;
 	}
-	
+
 }
