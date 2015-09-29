@@ -1,7 +1,7 @@
 <?php
 
 require "helloworld_bootstrap.php";
-
+require "Persona.php"
 ?>
 
 
@@ -58,7 +58,13 @@ require "helloworld_bootstrap.php";
     <div class="starter-template">
         <h1>
             <?php
-                $hello->greetings_random();
+
+                //$hello->greetings_random();
+
+                $persona = new Persona("nom",  "cognom1", "cognom2");
+                echo "Name: " . $persona->name;
+                echo "<br/>";
+                echo $persona->full_name();
             ?>
         </h1>
     </div>
