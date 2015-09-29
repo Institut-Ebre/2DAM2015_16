@@ -8,7 +8,6 @@
 
 class Factoria
 {
-
     /**
      * @var string
      */
@@ -108,7 +107,9 @@ class Factoria
         $this->sn2 = $sn2;
     }
 
-
-
+    public function full_name()
+    {
+        return $this->getName() . 'Name 1' . $this->name2 . 'Name 2';
+    }
 
 }

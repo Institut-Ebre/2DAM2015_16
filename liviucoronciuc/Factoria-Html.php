@@ -6,7 +6,7 @@
 </head>
 <body>
         <h1>
-            <?php echo $factoria->name ;?>
+            <?php echo $persona->name ;?>
         </h1>
 </body>
 </html>
