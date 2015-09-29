@@ -6,7 +6,7 @@
  * Time: 19:45
  */
 
-class Factoria
+class Persona
 {
 
     /**

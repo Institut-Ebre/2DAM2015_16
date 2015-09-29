@@ -61,10 +61,10 @@ require "Persona.php"
 
                 //$hello->greetings_random();
 
-                $factoria = new Factoria("nom",  "cognom1", "cognom2");
-                echo "Name: " . $factoria->name;
+                $persona = new Persona("nom",  "cognom1", "cognom2");
+                echo "Name: " . $persona->name;
                 echo "<br/>";
-                echo $factoria->full_name();
+                echo $persona->full_name();
             ?>
         </h1>
     </div>
