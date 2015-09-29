@@ -32,14 +32,12 @@ class Factoria
     /**
      * Factoria constructor.
      * @param string $name
-     * @param string $name2
      * @param string $sn1
      * @param string $sn2
      */
-    public function __construct($name, $name2, $sn1, $sn2)
+    public function __construct($name, $sn1, $sn2)
     {
         $this->name = $name;
-        $this->name2 = $name2;
         $this->sn1 = $sn1;
         $this->sn2 = $sn2;
     }
@@ -58,22 +56,6 @@ class Factoria
     public function setName($name)
     {
         $this->name = $name;
-    }
-
-    /**
-     * @return string
-     */
-    public function getName2()
-    {
-        return $this->name2;
-    }
-
-    /**
-     * @param string $name2
-     */
-    public function setName2($name2)
-    {
-        $this->name2 = $name2;
     }
 
     /**

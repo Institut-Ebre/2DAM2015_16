@@ -1,7 +1,7 @@
 <?php
 
 require "helloworld_bootstrap.php";
-require "Factoria.php"
+require "Persona.php"
 ?>
 
 
@@ -61,7 +61,7 @@ require "Factoria.php"
 
                 //$hello->greetings_random();
 
-                $factoria = new Factoria("nom", "nom2", "cognom1", "cognom2");
+                $factoria = new Factoria("nom",  "cognom1", "cognom2");
                 echo "Name: " . $factoria->name;
                 echo "<br/>";
                 echo $factoria->full_name();
