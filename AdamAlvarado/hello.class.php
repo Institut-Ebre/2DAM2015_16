@@ -21,7 +21,7 @@ class Hello
 	}
 	
 	public function greetings_random(){
-		echo "Hola" . $this->faker-> name;
+		echo "Hola " . $this-> faker-> name;
 	}
 
 }
