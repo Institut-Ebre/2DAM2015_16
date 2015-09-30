@@ -1,45 +1,42 @@
 <?php
+
 /**
  * Created by PhpStorm.
- * User: liviucoronciuc
- * Date: 29/9/15
- * Time: 19:45
+ * User: sylver
+ * Date: 29/09/15
+ * Time: 19:46
  */
-
-class Persona
+class Factoria
 {
 
     /**
      * @var string
      */
-    public $name        = "";
+    public $name = "";
+
 
     /**
      * @var string
      */
-    public $name2       = "";
+    public $sn1 = "";
 
     /**
      * @var string
      */
-    public $sn1         = "";
-
-    /**
-     * @var string
-     */
-    public $sn2         = "";
+    public $sn2 = "";
 
     /**
      * Factoria constructor.
      * @param string $name
-     * @param string $sn1
+     * @param string $name2
      * @param string $sn2
+     * @param string $sn1
      */
-    public function __construct($name, $sn1, $sn2)
+    public function __construct($name, $sn2, $sn1)
     {
         $this->name = $name;
-        $this->sn1 = $sn1;
         $this->sn2 = $sn2;
+        $this->sn1 = $sn1;
     }
 
     /**
@@ -58,21 +55,6 @@ class Persona
         $this->name = $name;
     }
 
-    /**
-     * @return string
-     */
-    public function getSn1()
-    {
-        return $this->sn1;
-    }
-
-    /**
-     * @param string $sn1
-     */
-    public function setSn1($sn1)
-    {
-        $this->sn1 = $sn1;
-    }
 
     /**
      * @return string
@@ -90,8 +72,25 @@ class Persona
         $this->sn2 = $sn2;
     }
 
-    public function full_name()
+    /**
+     * @return string
+     */
+    public function getSn1()
     {
+        return $this->sn1;
+    }
+
+    /**
+     * @param string $sn1
+     */
+    public function setSn1($sn1)
+    {
+        $this->sn1 = $sn1;
+    }
+
+    public function full_name() {
         return $this->getSn1() . ' ' . $this->getSn2() . ', ' . $this->getName();
     }
+
 }
+

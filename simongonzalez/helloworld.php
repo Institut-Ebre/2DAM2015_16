@@ -1,4 +1,4 @@
-<?php require "helloworld_bootstrap.php"; ?>
+<?php require "helloworld_bootstrap.php"; require "Factoria.php" ?>
 
 
 <!DOCTYPE html>
@@ -57,7 +57,15 @@
     <div class="container">
 
       <div class="starter-template">
-        <h1><?php echo $hello->greetings_random();?></h1>
+        <h1>
+          <?php
+
+            echo $hello->greetings_random();
+
+          ?></h1>
+        <?php
+            $factoria = new Factoria("pepe", "jeans", "rasea");
+        ?>
         <p class="lead"><br></p>
       </div>
 
