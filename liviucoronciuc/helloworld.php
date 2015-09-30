@@ -2,10 +2,9 @@
 
 require "helloworld_bootstrap.php";
 
+require "Factoria.php";
+
 ?>
-
-
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -59,7 +58,18 @@ require "helloworld_bootstrap.php";
         <h1>
             <?php
             //$hello->greetings();
-            $hello->greetings_random();
+            //echo "1";
+            $persona = new Factoria("papa","liviu","coronciuc","mongolin");
+            //echo "2";
+            //echo "name " . $factoria->name;
+            //echo "SN " .   $factoria->getName2();
+
+            echo "</br>";
+            echo $persona->full_name();
+            echo "</br>";
+
+            //echo "3";
+            //$hello->greetings_random();
             ?>
         </h1>
     </div>
