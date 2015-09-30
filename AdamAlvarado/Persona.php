@@ -80,4 +80,6 @@ class Persona
     {
         return $this->getSn1() . $this->getSn2() . $this->getName();
     }
+
+    
 }
