@@ -13,7 +13,7 @@ class Hello
 			$this->faker = $faker;
 	}
 	
-	public function greetings($name = null){//$name pot estar buit	
+	public function greetings($name = null){//$name pot estar buit
 		if($name != null){//Si arriba sense valor a la variable...
 			echo "Hola $name";//Saludes a $name (Pepe segons la variable publica)
 		}else{ //Si no, saludes al valor que t'ha arribat (que ve de faker)
@@ -25,6 +25,4 @@ class Hello
 	public function greetings_random(){
 		echo "Hola ". $this->faker->name;
 	}
-	
 }
-
