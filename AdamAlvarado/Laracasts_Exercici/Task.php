@@ -9,10 +9,12 @@
 
 
 class Task {
+    public $tittle;
     public $description;
     public $completed = false;
 
-    public function  __construct($description){
+    public function  __construct($tittle, $description){
+        $this->tittle = $tittle;
         $this->description = $description;
     }
 
@@ -22,8 +24,9 @@ class Task {
 
 }
 
-$task = new Task('Learn OPP' . ' ' . 'This is a description');
+$task = new Task('Learn OPP', 'This is a description');
 $task->complete();
 
+var_dump($task->tittle);
 var_dump($task->description);
 var_dump($task->completed);
