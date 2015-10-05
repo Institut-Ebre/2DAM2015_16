@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ab297e7e-4074-449f-a03e-64e237c000b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Order.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/hello.blade.php.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/nothing.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../Factoria.php" afterPath="$PROJECT_DIR$/../Factoria.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Classes/Task.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Exercicis-Laracast.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,11 +25,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="hello.blade.php.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/hello.blade.php.html">
+      <file leaf-file-name="Task.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Classes/Task.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17447656">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.07477567">
+              <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -56,6 +54,7 @@
         <option value="$PROJECT_DIR$/nothing.php" />
         <option value="$PROJECT_DIR$/Order.php" />
         <option value="$PROJECT_DIR$/hello.blade.php.html" />
+        <option value="$PROJECT_DIR$/Classes/Task.php" />
       </list>
     </option>
   </component>
@@ -87,7 +86,7 @@
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -98,14 +97,37 @@
       <autoscrollFromSource />
       <sortByType />
     </navigator>
-    <panes />
+    <panes>
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exercicis-Laracast" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exercicis-Laracast" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Exercicis-Laracast" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="SearchEverywhereHistoryKey" value="New&#9;ACTION&#9;NewElementSamePlace&#10;file template&#9;ACTION&#9;SaveFileAsTemplate&#10;File and code&#9;null&#9;null&#10;file templ&#9;ACTION&#9;SaveFileAsTemplate&#10;file templates&#9;null&#9;null&#10;file tem&#9;ACTION&#9;SaveFileAsTemplate" />
+    <property name="SearchEverywhereHistoryKey" value="ord&#9;FILE&#9;file:///home/sylver/Code/PHP/2DAM2015_16/simongonzalez/Exercicis-Laracast/Order.php&#10;New&#9;ACTION&#9;NewElementSamePlace&#10;file template&#9;ACTION&#9;SaveFileAsTemplate&#10;File and code&#9;null&#9;null&#10;file templ&#9;ACTION&#9;SaveFileAsTemplate&#10;file templates&#9;null&#9;null&#10;file tem&#9;ACTION&#9;SaveFileAsTemplate" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RunManager">
@@ -215,18 +237,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Order.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14955135">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.12462612">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
           <folding>
             <marker date="1444046107542" expanded="true" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/hello.blade.php.html">
+    <entry file="file://$PROJECT_DIR$/Classes/Task.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17447656">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.07477567">
+          <caret line="3" column="4" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="4" />
           <folding />
         </state>
       </provider>
