@@ -28,7 +28,6 @@ class Factoria
     /**
      * Factoria constructor.
      * @param string $name
-     * @param string $name2
      * @param string $sn2
      * @param string $sn1
      */
