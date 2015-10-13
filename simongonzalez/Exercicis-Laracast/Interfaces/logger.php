@@ -1,16 +1,18 @@
 <?php
 
-interface Logger {}
+interface Logger {
+    public function execute($message);
+}
 
-class LogToFile {
+class LogToFile implements Logger {
     public function execute ($message)
     {
         var_dump('log the message to a file' . $message);
     }
 }
 
-class LogToDatabase{
-    public function exeucte($message)
+class LogToDatabase implements Logger{
+    public function execute($message)
     {
         var_dump('log the message to a database');
     }
@@ -21,7 +23,7 @@ class LogToDatabase{
 
 class UsersController{
 
-    public function __construct(LogToFile $logger)
+    public function __construct(Logger $logger)
     {
         $this->logger = $logger;
     }
@@ -34,6 +36,6 @@ class UsersController{
     }
 }
 
-$controller = new UsersController(new LogToFile());
+$controller = new UsersController(new LogToDatabase());
 
 $controller->show();
