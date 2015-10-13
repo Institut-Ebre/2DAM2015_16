@@ -1,7 +1,29 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: sylver
- * Date: 13/10/15
- * Time: 8:36
- */
+
+class Shape {
+    protected $length = 4;
+
+    public function getArea()
+    {
+        return pow($this->length, 2);
+    }
+}
+
+class Square {
+
+}
+
+class Triangle {
+
+    protected $base = 4;
+
+    protected $height = 7;
+
+    public function getArea()
+    {
+        return .5 * $this->base * $this->height;
+    }
+
+}
+
+echo (new Triangle)->getArea();
