@@ -1,7 +1,10 @@
 <?php
 
-class Shape {
-
+abstract class Shape {
+    public function __construct($color)
+    {
+        
+    }
 }
 
 class Square extends Shape {
@@ -30,4 +33,4 @@ class Cirlce extends Shape {
 
 }
 
-echo (new Circle)->getArea();
+(new Shape);
