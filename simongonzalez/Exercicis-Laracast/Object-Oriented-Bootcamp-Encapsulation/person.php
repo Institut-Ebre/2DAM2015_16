@@ -2,9 +2,9 @@
 
 class Person {
 
-    public $name;
+    private $name;
 
-    public $age;
+    private $age;
 
     public function __construct($name)
     {
@@ -31,6 +31,6 @@ $jhon = new Person("John Doe");
 
 $jhon->setAge(30);
 
-$jhon->age = 8;
+$jhon->age = 8; //now this gives error, but is what we want to show
 
 var_dump($jhon->getAge());

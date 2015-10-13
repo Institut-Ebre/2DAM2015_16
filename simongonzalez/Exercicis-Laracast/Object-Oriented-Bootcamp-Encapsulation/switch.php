@@ -1,6 +1,6 @@
 <?php
 
-class Button {
+class LightSwitch {
 
     public function on()
     {
@@ -12,17 +12,17 @@ class Button {
 
     }
 
-    public function connect()
+    private function connect()
     {
 
     }
 
-    public function activate()
+    private function activate()
     {
 
     }
 }
 
-$switch = new Button();
+$switch = new LightSwitch();
 
 $switch->connect();
