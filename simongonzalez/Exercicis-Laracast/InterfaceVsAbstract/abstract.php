@@ -1,12 +1,18 @@
 <?php
 
-
-abstract class Provider {
-
-    abstract protected function getAuthorizationUrl();
+interface Provider{
+    public function getAuthorizationUrl();
 }
 
-class FacebookProvider extends Provider {
+abstract class AbstractProvider {
+
+    protected function related()
+    {
+
+    }
+}
+
+class FacebookProvider implements Provider {
 
     protected function getAuthorizationUrl()
     {
