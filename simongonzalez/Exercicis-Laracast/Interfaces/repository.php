@@ -4,14 +4,14 @@ interface Repository{
     public function save($data);
 }
 
-class MongoRepository {
+class MongoRepository implements Repository{
     public function save($data)
     {
 
     }
 }
 
-class FileRepository {
+class FileRepository implements Repository{
     public function save($data)
     {
 
