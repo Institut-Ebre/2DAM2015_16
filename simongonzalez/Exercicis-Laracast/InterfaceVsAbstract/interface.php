@@ -7,7 +7,7 @@ interface Provider {
 function login (Provider $provider)
 {
     $provider->autorize();
-        
+
 }
 
 Auth::attempt()
