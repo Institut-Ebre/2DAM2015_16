@@ -9,11 +9,11 @@ class Shape {
     }
 }
 
-class Square {
+class Square extends Shape {
 
 }
 
-class Triangle {
+class Triangle extends Shape {
 
     protected $base = 4;
 
