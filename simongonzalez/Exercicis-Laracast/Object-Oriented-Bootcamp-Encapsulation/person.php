@@ -11,12 +11,13 @@ class Person {
         $this->name = $name;
     }
 
+
     public function getAge()
     {
         return $this->age * 365;
     }
 
-   c function setAge($age)
+    public function setAge($age)
     {
         if($age < 10){
             throw new Exception("Person is not old enough.");
@@ -30,4 +31,6 @@ $jhon = new Person("John Doe");
 
 $jhon->setAge(30);
 
-var_dump(&$jhon->setAge());
+$jhon->age = 8;
+
+var_dump($jhon->getAge());
