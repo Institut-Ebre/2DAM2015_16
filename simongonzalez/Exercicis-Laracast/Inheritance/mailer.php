@@ -8,9 +8,9 @@ abstract class Mailer {
 }
 
 class UserMailer extends Mailer {
-
+    public function sendWelcomeEmail(User $user)
+    {
+        return $this->send($user->email);
+    }
 }
 
-class AdminMailer extends Mailer{
-
-}
