@@ -1,7 +1,5 @@
 <?php
 
-
-
 class Model
 {
     public $string;
